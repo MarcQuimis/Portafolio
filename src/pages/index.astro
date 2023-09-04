@@ -157,4 +157,151 @@ import Layout from '../layouts/Layout.astro';
     </footer>
   </body>
 
+  <style>
+    :root{
+    --primary-color: rgb(241, 173, 45);
+    
+    
+    }
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    body {
+      font-family: 'MiFuentePersonalizada', Arial, sans-serif;
+    }
+    
+    
+    img{
+        
+        width: 35px;
+    }
+    
+    div.container{
+        cursor: default;
+    }
+    
+    body{
+        scroll-behavior:smooth;
+        
+    }
+    
+    .boton{
+    text-align: center;
+    }
+    
+    .bDescarga{
+      display: flex;
+      display: inline-block;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff; 
+        text-decoration: none; 
+        border-radius: 5px; 
+        cursor: pointer;
+        margin: 20px 0 20px 0;
+    }
+    
+    .items-center {
+        align-items: center;
+    }
+    .flex-col {
+        flex-direction: column;
+    }
+    
+    
+    div.container-fluid{
+        background-color: #eeeeee;
+    }
+    
+    body{
+    
+        background-color: #2f145d;
+    }
+    .skills img{
+        width: 8rem;
+        height: 8rem;
+        
+    }
+    
+    .LetraA{
+    
+        font-size: 2vw;
+        font-style: none;
+        list-style: none;
+    }
+    
+    section article img{
+        width: 350px;
+    }
+    
+    
+    a:hover{
+    
+        background-color: #CCC;
+    }
+    
+    
+    .front{
+        color:var(--primary-color);
+    }
+    
+    .presentacion{
+        font-size: 12.25vw;
+        font-weight: 700;
+        color: antiquewhite;
+     
+    }
+    
+    
+    .presentacion2{
+        font-size: 5.05vw;
+        line-height: 115%;
+        margin:20px;
+        color: antiquewhite;
+    }
+    
+    .container span:hover{
+        color: crimson;
+        transition: 0.5s ease;
+        background: none;
+        
+    }
+    
+    span{
+        animation: fadeIn 2.5s ease-in-out 1s forwards;
+        opacity: 0;
+    }
+    
+    .sticky{
+        background-color:var(--primary-color);
+        position: sticky;
+        top: 0;
+        padding: 20px;
+        z-index: 1000;
+    }
+    
+    
+    
+      div.container ul{
+    
+        animation: fadeIn 1s ease-in-out 1s forwards;
+        opacity: 0;
+    } 
+    
+    @keyframes fadeIn {
+        from {opacity: 0;}
+        to {opacity: 1;}
+      }
+    
+    
+    
+    
+    @media screen and (max-width:575px){
+    
+    
+    
+    }
+  </style>
+
  
