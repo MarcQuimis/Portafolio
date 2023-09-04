@@ -4,7 +4,8 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="Portafolio Marc">
-
+  <link href="../styles.css" rel="stylesheet">
+<body>
 	<div class="presentacion py-4 px-5">
         <div class="presentacion flex flex-col items-center">
           <p class="animate-fade animate-duration-[1500ms] animate-delay-[550ms]">Desarollador</p>
@@ -25,12 +26,12 @@ import Layout from '../layouts/Layout.astro';
 
 
     <header class="sticky" id="portfolio">
-      <div class="container mx-auto py-3">
+      <div class="py-3">
         <div class="flex justify-between items-center">
           <a class="text-xl font-bold" href="#">Marc Quimis</a>
     
           <nav>
-            <ul class="flex space-x-4">
+            <ul class="flex space-x-4 justify-end items-end">
               <li>
                 <a href="#portfolio">Portfolio</a>
               </li>
@@ -50,17 +51,17 @@ import Layout from '../layouts/Layout.astro';
     </header>
     
     
-      <h2 class="text-4xl py-4 px-5" id="habilidades">Skills</h2>
+      <h2 class="text-4xl py-4 px-5 text-white" id="habilidades">Skills</h2>
         
         <div class="flex justify-evenly">
           <div class="skills">
-            <img src="../media/imgs/HTML5_logo.svg" alt="">
+            <img src="../media/imgs/htmllogo.svg" alt="">
           </div>
           <div class="skills">
-            <img src="../media/imgs/CSS3_Logo.svg" alt="">
+            <img src="../media/imgs/csslogo.svg" alt="">
           </div>
           <div class="skills">
-            <img src="../media/imgs/JavaScript_logo.svg" alt="">
+            <img src="../media/imgs/javascriptlogo.svg" alt="">
           </div>
           <div class="skills">
             <img src="../media/imgs/tailwindcss.svg" alt="">
@@ -70,12 +71,12 @@ import Layout from '../layouts/Layout.astro';
 
   
         
-            <h2 class="text-4xl py-4 px-5" id="proyectos">Lo que puedo demostrar:</h2>
+            <h2 class="text-4xl py-4 px-5 text-white" id="proyectos">Lo que puedo demostrar:</h2>
 
     <section class="flex flex-wrap">
   
       <article class="w-full md:w-1/3 p-4 group relative">
-        <div class="bg-white p-4 transition-transform transform hover:scale-105">
+        <div class="bg- p-4 transition-transform transform hover:scale-105">
           <img src="" alt="" class="w-16 h-16 mx-auto transition-opacity">
           <h3 class="text-lg mt-4">Proyecto 0</h3>
           <p class="mt-2">Proximamente.</p>
@@ -150,167 +151,10 @@ import Layout from '../layouts/Layout.astro';
         </a>
     
         <a href="https://github.com/MarcQuimis" target="_blank" class="text-md link">
-          <img src="media/imgs/Github_logo_svg.svg" alt="GitHub" class="w-12 h-15">
+          <img src="media/imgs/githublogo.svg" alt="GitHub" class="w-12 h-15">
         </a>
       </div>
     </footer>
+  </body>
 
  
-	<style>
-		:root{
---primary-color: rgb(241, 173, 45);
-
-
-}
-*{
-    padding: 0;
-    margin: 0;
-}
-body {
-  font-family: 'MiFuentePersonalizada', Arial, sans-serif;
-}
-
-
-img{
-    
-    width: 35px;
-}
-
-div.container{
-    cursor: default;
-}
-
-body{
-    scroll-behavior:smooth;
-    
-}
-
-.boton{
-text-align: center;
-}
-
-.bDescarga{
-  display: flex;
-  display: inline-block;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff; 
-    text-decoration: none; 
-    border-radius: 5px; 
-    cursor: pointer;
-    margin: 20px 0 20px 0;
-}
-
-.items-center {
-    align-items: center;
-}
-.flex-col {
-    flex-direction: column;
-}
-
-
-div.container-fluid{
-    background-color: #eeeeee;
-}
-
-body{
-
-    background-color: #2f145d;
-}
-.skills img{
-    width: 8rem;
-    height: 8rem;
-    
-}
-
-.LetraA{
-
-    font-size: 2vw;
-    font-style: none;
-    list-style: none;
-}
-
-section article img{
-    width: 350px;
-}
-
-section.d-flex{
-    width: 90%;
-    margin: 0 auto;
-}
-
-a:hover{
-
-    background-color: #CCC;
-}
-
-
-.front{
-    color:var(--primary-color);
-}
-
-.presentacion{
-    font-size: 12.25vw;
-    font-weight: 700;
-    color: antiquewhite;
- 
-}
-
-
-.presentacion2{
-    font-size: 5.05vw;
-    line-height: 115%;
-    margin:20px;
-    color: antiquewhite;
-}
-
-.container span:hover{
-    color: crimson;
-    transition: 0.5s ease;
-    background: none;
-    
-}
-
-span{
-    animation: fadeIn 2.5s ease-in-out 1s forwards;
-    opacity: 0;
-}
-
-.sticky{
-    background-color:var(--primary-color);
-    position: sticky;
-    top: 0;
-    padding: 20px;
-    z-index: 1000;
-}
-
-
-
-  div.container ul{
-
-    animation: fadeIn 1s ease-in-out 1s forwards;
-    opacity: 0;
-} 
-
-@keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity: 1;}
-  }
-
-
-  @media screen and (min-width:578px) and (max-width:768px){
-
-
-    section.d-flex{
-       width: 55%;
-       
-    }
-  }
-
-@media screen and (max-width:575px){
-
-
-
-}
-
-	</style>
