@@ -17,10 +17,11 @@ import Layout from '../layouts/Layout.astro';
        
         <p class="presentacion2">Me llamo Marc, un programador <span class="front">Front-End</span> con ganas de crecer en este sector y pulir mis habilidades</p>
     </div>
-
-   <a href="media/pdf/Curriculum mq.pdf" download class="block bg-blue-500 text-white font-semibold rounded-full text-center my-5 mx-5 py-4 px-4 ">
-  Descarga mi CV
-</a>
+    <div class="boton">
+      <a href="../media/pdf/Curriculum mq.pdf" download class="bDescarga">
+      Descarga mi CV
+      </a>
+    </div>
 
 
     <header class="sticky" id="portfolio">
@@ -53,16 +54,16 @@ import Layout from '../layouts/Layout.astro';
         
         <div class="flex justify-evenly">
           <div class="skills">
-            <img src="media/imgs/HTML5_logo.svg" alt="">
+            <img src="../media/imgs/HTML5_logo.svg" alt="">
           </div>
           <div class="skills">
-            <img src="media/imgs/CSS3_Logo.svg" alt="">
+            <img src="../media/imgs/CSS3_Logo.svg" alt="">
           </div>
           <div class="skills">
-            <img src="media/imgs/JavaScript_logo.svg" alt="">
+            <img src="../media/imgs/JavaScript_logo.svg" alt="">
           </div>
           <div class="skills">
-            <img src="media/imgs/tailwindcss.svg" alt="">
+            <img src="../media/imgs/tailwindcss.svg" alt="">
           </div>
         </div>
 
@@ -184,6 +185,22 @@ body{
     
 }
 
+.boton{
+text-align: center;
+}
+
+.bDescarga{
+  display: flex;
+  display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff; 
+    text-decoration: none; 
+    border-radius: 5px; 
+    cursor: pointer;
+    margin: 20px 0 20px 0;
+}
+
 .items-center {
     align-items: center;
 }
@@ -198,7 +215,7 @@ div.container-fluid{
 
 body{
 
-    background-color: #4a2d7a ;
+    background-color: #2f145d;
 }
 .skills img{
     width: 8rem;
