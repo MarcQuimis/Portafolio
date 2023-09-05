@@ -8,15 +8,15 @@ import Layout from '../layouts/Layout.astro';
 <body>
 	<div class="presentacion py-4 px-5">
         <div class="presentacion flex flex-col items-center">
-          <p class="animate-fade animate-duration-[1500ms] animate-delay-[550ms]">Desarollador</p>
+          <p class="animate-fade animate-duration-[1500ms] animate-delay-[550ms] ColorT">Desarollador</p>
             <div class=" flex">
-              <div class="animate-fade-right animate-duration-[1500ms] animate-delay-[1050ms]">Front</div>
-              <div class="animate-fade animate-duration-[1500ms] animate-delay-[1000ms]">-</div>
-              <div class="animate-fade-left animate-duration-[1500ms] animate-delay-[1050ms]">End</div>
+              <div class="animate-fade-right animate-duration-[1500ms] animate-delay-[1050ms] ColorT">Front</div>
+              <div class="animate-fade animate-duration-[1500ms] animate-delay-[1000ms] ColorT">-</div>
+              <div class="animate-fade-left animate-duration-[1500ms] animate-delay-[1050ms] ColorT">End</div>
             </div>
         </div>
        
-        <p class="presentacion2">Me llamo Marc, un programador <span class="front">Front-End</span> con ganas de crecer en este sector y pulir mis habilidades</p>
+        <p class="presentacion2">Me llamo Marc, un programador <span class="ColorT">Front-End</span> con ganas de crecer en este sector y pulir mis habilidades</p>
     </div>
     <div class="boton">
       <a href="../media/pdf/Curriculum mq.pdf" download class="bDescarga">
@@ -53,17 +53,18 @@ import Layout from '../layouts/Layout.astro';
     
       <h2 class="text-4xl py-4 px-5 text-white" id="habilidades">Skills</h2>
         
-        <div class="flex justify-evenly">
-          <div class="skills">
+       
+        <div class="flex justify-evenly flex-wrap">
+          <div class="skills  py-1 px-1">
             <img src="../media/imgs/htmllogo.svg" alt="htmllogo">
           </div>
-          <div class="skills">
+          <div class="skills  py-1 px-1">
             <img src="../media/imgs/css3.png" alt="csslogo">
           </div>
-          <div class="skills">
+          <div class="skills  py-1 px-1">
             <img src="../media/imgs/javascriptlogo.svg" alt="javascriptlogo">
           </div>
-          <div class="skills">
+          <div class="skills  py-1 px-1">
             <img src="../media/imgs/tailwindcss.svg" alt="tailwindlogo">
           </div>
         </div>
@@ -75,8 +76,8 @@ import Layout from '../layouts/Layout.astro';
 
     <section class="flex flex-wrap">
   
-      <article class="w-full md:w-1/3 p-4 group relative">
-        <div class="bg- p-4 transition-transform transform hover:scale-105">
+      <article class="w-full sm:w-1/2 md:w-1/3 p-4 group relative">
+        <div class="bg-white p-4 transition-transform transform hover:scale-105">
           <img src="" alt="" class="w-16 h-16 mx-auto transition-opacity">
           <h3 class="text-lg mt-4">Proyecto 0</h3>
           <p class="mt-2">Proximamente.</p>
@@ -86,7 +87,7 @@ import Layout from '../layouts/Layout.astro';
       </article>
     
 
-      <article class="w-full md:w-1/3 p-4 group relative">
+      <article class="w-full sm:w-1/2 md:w-1/3 p-4 group relative">
         <div class="bg-white p-4 transition-transform transform hover:scale-105">
           <img src="" alt="" class="w-16 h-16 mx-auto transition-opacity">
           <h3 class="text-lg mt-4">Proyecto 1</h3>
@@ -96,7 +97,7 @@ import Layout from '../layouts/Layout.astro';
         </div>
       </article>
 
-      <article class="w-full md:w-1/3 p-4 group relative">
+      <article class="w-full sm:w-1/2 md:w-1/3 p-4 group relative">
         <div class="bg-white p-4 transition-transform transform hover:scale-105">
           <img src="" alt="" class="w-16 h-16 mx-auto transition-opacity">
           <h3 class="text-lg mt-4">Proyecto 2</h3>
@@ -106,7 +107,7 @@ import Layout from '../layouts/Layout.astro';
         </div>
       </article>
 
-      <article class="w-full md:w-1/3 p-4 group relative">
+      <article class="w-full sm:w-1/2 md:w-1/3 p-4 group relative">
         <div class="bg-white p-4 transition-transform transform hover:scale-105">
           <img src="" alt="" class="w-16 h-16 mx-auto transition-opacity">
           <h3 class="text-lg mt-4">proyecto 3</h3>
@@ -116,7 +117,7 @@ import Layout from '../layouts/Layout.astro';
         </div>
       </article>
 
-      <article class="w-full md:w-1/3 p-4 group relative">
+      <article class="w-full sm:w-1/2 md:w-1/3 p-4 group relative">
         <div class="bg-white p-4 transition-transform transform hover:scale-105">
           <img src="" alt="" class="w-16 h-16 mx-auto transition-opacity">
           <h3 class="text-lg mt-4">Poryecto 4</h3>
@@ -126,7 +127,7 @@ import Layout from '../layouts/Layout.astro';
         </div>
       </article>
 
-      <article class="w-full md:w-1/3 p-4 group relative">
+      <article class="w-full sm:w-1/2 md:w-1/3 p-4 group relative">
         <div class="bg-white p-4 transition-transform transform hover:scale-105">
           <img src="" alt="" class="w-16 h-16 mx-auto transition-opacity">
           <h3 class="text-lg mt-4">Proyecto 5</h3>
@@ -139,7 +140,7 @@ import Layout from '../layouts/Layout.astro';
     </section>
     
     <footer id="contacto" class="flex flex-col items-center my-6 mx-6">
-      <h2 class="text-4xl py-4 px-5">Contacto</h2>
+      <h2 class="text-4xl py-4 px-5 text-white">Contacto</h2>
     
       <div class="flex justify-evenly w-full max-w-xs">
         <a href="https://api.whatsapp.com/send?phone=632102102&text=¡Hola! He visto tu perfil de developer y me gustaría contactar contigo." target="_blank" class="text-md link">
@@ -163,6 +164,7 @@ import Layout from '../layouts/Layout.astro';
     
     
     }
+    background: linear-gradient(to right, #FFD700, #FFA500);
   
     
     div.container{
@@ -172,6 +174,13 @@ import Layout from '../layouts/Layout.astro';
     body{
         scroll-behavior:smooth;
         
+    }
+
+    .ColorT{
+      background: linear-gradient(to top, #FFD700, #FFA500);
+      -webkit-background-clip: text;
+      color: transparent;
+      display: inline;
     }
     
     .boton{
@@ -219,9 +228,7 @@ import Layout from '../layouts/Layout.astro';
     }
     
     
-    .front{
-        color:var(--primary-color);
-    }
+  
     
     .presentacion{
         font-size: 12.25vw;
@@ -256,6 +263,10 @@ import Layout from '../layouts/Layout.astro';
         top: 0;
         padding: 20px;
         z-index: 1000;
+    }
+
+    footer img{
+      filter: invert(1);
     }
     
     
